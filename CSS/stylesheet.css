@@ -1,0 +1,181 @@
+/* Fuentes */
+  @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500;700&family=Barlow+Condensed:wght@500;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Antonio', sans-serif;
+    user-select: none;
+ 
+}
+    
+.Wrapper{
+    background-image: url("../Images/Background.jpg");
+    background-color: #110d0a;
+    background-position: top center;
+   
+    background-repeat: no-repeat;
+}
+
+.Separador{
+    height:4vh;
+}
+
+@media (max-width:768px){
+    .Separador{
+        height:1vh;
+    }
+}
+
+.ImagenTour{
+    display: block;
+    margin:0 auto;
+    width:40%;
+    text-align: center;
+    max-width:600px;
+}
+.UsaTour{
+    width:35%;
+    max-width: 500px;
+    display: block;
+    margin:0 auto;
+}
+
+
+
+.CamposFechasConciertos{
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.LineaFechaConcierto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    margin-top:3vh;
+    margin-bottom:3vh;
+    animation: fadeInAnimation 2s ease-in-out 1;
+}
+
+@media (max-width:768px){
+    .LineaFechaConcierto{
+        display: block;
+        text-align: center;
+        margin-top:5vh;
+        margin-bottom:2vh;
+    }
+}
+
+.FechaConcierto{
+color:#fff;
+flex-basis: 40%;
+}
+
+.DiaMes{
+    font-size:18px;
+    color: #f11c23;
+}
+
+.DiaMesSoldOut{
+    text-decoration:line-through 2px;
+}
+
+.CiudadConcierto{
+    font-size:28px;
+    font-weight: 700;
+    text-shadow: 0px 6px 8px #ffffff99;
+    display: inline-block;
+}
+
+.CiudadConciertoSoldOut{
+    position: relative;
+    color: #5b5856 !important;
+    text-shadow: 0px 6px 8px #5b585699;
+}
+
+.SoldOutSticker{
+    position: absolute;
+    bottom:10%;
+    left:0;
+}
+
+@media (max-width:768px){
+    .SoldOutSticker{
+        left: 50%;
+    transform: translateX(-50%);
+}
+
+    }
+
+.LugarConcierto{
+    text-align: center;
+    color:#d3d3d3;
+    font-weight: 800;
+    flex-basis: 40%;
+    font-size: 20px;
+    text-shadow: 0px 6px 8px #ffffff33;
+}
+
+.GradienteTexto{
+    background-color: #f3ec78;
+    background-image: linear-gradient(11deg, rgba(255,29,37,1) 21%, rgba(255,255,255,1) 49%, rgba(255,29,37,1) 72%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+@media (max-width:768px){
+    .LugarConcierto{
+        text-align: center;
+        padding:4px 25px 16px 25px;
+    }
+
+    .EnlaceFecha {
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        }
+}
+
+.BotonConcierto button{   
+    font-size:18px;
+    font-weight: 700;
+    background-color: #f11c23;
+    padding: 6px 4px 8px 4px;
+    border: 0 solid transparent;
+    border-bottom:4px solid #bb282b;
+    flex-basis: 40%;
+    transition: 0.3s;
+    width: 190px;
+    color:#fff;
+    cursor: pointer;
+    box-shadow: 0px 8px 8px #f11c2344;
+}
+
+.FechaVenta button:hover{ 
+    background-color: #F81E2F;
+    color: #fff !important;
+    border-bottom-color: #A5121E;
+    transition: 0.3s;
+
+}
+
+.SoldOut button{
+color:#fff !important;
+text-decoration:line-through 2px;
+cursor:default !important;
+}
+
+.ImagenInferior{
+    display: block;
+    margin:0 auto;
+    width:50%;
+    text-align: center;
+    max-width: 350px;
+}
+
+
